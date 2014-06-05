@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>24d4b709-de07-43ba-9910-516aa01beca2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>test\testData.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>pySuperMap</Name>
+    <RootNamespace>pySuperMap</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments />
+    <InterpreterPath />
+    <DebugStdLib>False</DebugStdLib>
+    <InterpreterArguments />
+    <DjangoSettingsModule />
+    <WebBrowserUrl />
+    <WebBrowserPort />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <PublishUrl>C:\test</PublishUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="dlg\mergeImgs.py" />
+    <Compile Include="dlg\testMergeImg.py">
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="smBase.py" />
+    <Compile Include="smEngine.py" />
+    <Compile Include="test\testMergeImage.py" />
+    <Compile Include="test\testOthers.py" />
+    <Compile Include="test\testData.py" />
+    <Compile Include="test\testTk.py" />
+    <Compile Include="tk\filetk.py" />
+    <Compile Include="tk\basetk.py" />
+    <Compile Include="tk\imgtk.py" />
+    <Compile Include="smIO.py" />
+    <Compile Include="smData.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dlg\" />
+    <Folder Include="test\" />
+    <Folder Include="tk" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
