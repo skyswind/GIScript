@@ -1,4 +1,9 @@
-﻿一、根目录sm说明
+﻿sm.bin.smu 是基于UGC的Python接口，提供常用的空间数据操作、空间分析、地图缓存等能力；
+sm 是基于 sm.bin.smu 的OO对象，提供空间数据操作功能；
+dlg/testMergeImg.py 是影像数据拼接入库工具。
+
+
+一、根目录sm说明
 Python类库根目录
 sm	
 	将组件包Bin下的文件拷贝到此文件夹下
