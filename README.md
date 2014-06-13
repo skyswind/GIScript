@@ -26,7 +26,7 @@
 
 
 ----------
-**Contributor:**  
+**Boarder:**  
 Qian Huang: huangqian@supermap.com  
 Qin Zhou: Zhouqin@supermap.com  
 Wang Erqi: wangerqi@supermap.com  
