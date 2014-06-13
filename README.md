@@ -26,17 +26,9 @@
 
 
 ----------
-# Project Readme:
-1、[SuperMapPythonObjects][1]  
-SuperMapPython Objects is a Simple Python based GeoSpatial Framework.  
-
-
-----------
 **Contributor:**  
 Qian Huang: huangqian@supermap.com  
 Qin Zhou: Zhouqin@supermap.com  
 Wang Erqi: wangerqi@supermap.com  
+Shi Weiwei: shiweiwei@supermap.com
 Weiming Yang: Yangweiming@supermap.com
-
-
-  [1]: https://github.com/skyswind/GIScript/blob/master/SuperMapPythonObjects/README.txt
