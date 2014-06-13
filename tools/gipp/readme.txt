@@ -21,6 +21,9 @@ How to install to ubuntu:
 2 mosquitto
   If you want using local MQTT broker:
   sudo apt-get install mosquitto
+  For more information,visit:
+    MQTT Protocol: www.mqtt.org
+    MQTT Broker: www.mosquitto.org
   
 3 MQTT client for python
    please visit: http://git.eclipse.org/c/paho
