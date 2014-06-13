@@ -15,10 +15,15 @@
 
 
 ----------
-
 # MileStone:
 2014.03.30 init the project  
 2014.06.04 upload version 1  
+
+
+----------
+# Todo:
+1、[SuperMapPythonObjects][1]  
+SuperMapPython Objects is a Simple Python based GeoSpatial Framework.  
 
 
 ----------
@@ -28,8 +33,6 @@ SuperMapPython Objects is a Simple Python based GeoSpatial Framework.
 
 
 ----------
-
-
 **Contributor:**  
 Qian Huang: huangqian@supermap.com  
 Qin Zhou: Zhouqin@supermap.com  
