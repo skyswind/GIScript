@@ -30,5 +30,5 @@
 Qian Huang: huangqian@supermap.com  
 Qin Zhou: Zhouqin@supermap.com  
 Wang Erqi: wangerqi@supermap.com  
-Shi Weiwei: shiweiwei@supermap.com
+Shi Weiwei: shiweiwei@supermap.com  
 Weiming Yang: Yangweiming@supermap.com
