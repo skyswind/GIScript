@@ -22,8 +22,7 @@
 
 ----------
 # Todo:
-1、[SuperMapPythonObjects][1]  
-SuperMapPython Objects is a Simple Python based GeoSpatial Framework.  
+1、Prepare for the publication
 
 
 ----------
