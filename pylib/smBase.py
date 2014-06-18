@@ -1,9 +1,9 @@
-﻿#coding: utf-8
+#coding: utf-8
 #基础类
 
 import os
 import sys
-import smu
+import smbin.smu
 
 #Rect2D
 class rect:

@@ -1,11 +1,11 @@
-﻿#coding: utf-8
+#coding: utf-8
 #基础类，数据源、数据集、工作空间等对象放到这里
 
 import os
 import sys
 import math
 import smBase
-import smu
+import smbin.smu as smu
 smu.Init()
 
 #数据集的基类

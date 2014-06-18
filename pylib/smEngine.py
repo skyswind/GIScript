@@ -5,7 +5,7 @@ import os
 import sys
 import math
 import smData
-import smu
+import smbin.smu as smu
 
 #UDB类型的数据源
 #必填参数：【udb文件路径】
