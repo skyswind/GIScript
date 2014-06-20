@@ -5,7 +5,7 @@ import os
 import sys
 import math
 import smBase
-import smbin.smu as smu
+import bin.smu as smu
 smu.Init()
 
 #数据集的基类

@@ -16,6 +16,7 @@ if __name__=='__main__':
     smlib_init()
     
     import smlib
+    smlib.load_smlib()
     smlib.version()
     sys.exit()
 

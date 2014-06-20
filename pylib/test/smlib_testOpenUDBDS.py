@@ -12,18 +12,20 @@ import sys
 import string
 import os
 
-udbpath=unicode(sys.path[0]+'/worldpy.udb',"utf-8")
+udbpath=unicode(sys.path[0]+'/smlib_worldpy.udb',"utf-8")
 
 # 初始化 pylib 环境
 def initEnvironment():
-	pylibpath=os.path.dirname(sys.path[0])
-	print pylibpath
-	sys.path.append(pylibpath)
+        """ Initialize GIScript Environment,Load Library.
+        """
+        smlib_path=os.path.dirname(sys.path[0]+"/../smlib_python/")
+#        print "smlib path: ", smlib_path
+        sys.path.append(smlib_path)
 
 def testOpenUDB():
 #       print udbpath
 	if os.path.exists(udbpath):
-		uds = smEngine.uds(udbpath, u'worldpy')
+		uds = smEngine.uds(udbpath, u'smlib_worldpy')
 		bOpen = uds.Open()
 		
 		if bOpen == 1 or uds.GetDatasetCount()==0:
@@ -48,11 +50,11 @@ help =u"----------------------------------------------------------\n\
 if __name__=='__main__':
 	reload(sys)
 	sys.setdefaultencoding("utf-8")
-	
 	if len(sys.argv) == 1:
 		initEnvironment()
+		import smlib
+		smlib.load_smlib()
 		import smEngine
-		
 		testOpenUDB()
 	else:   
 		print help

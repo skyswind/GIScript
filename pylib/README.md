@@ -1,6 +1,6 @@
 
-下载lib库，解压并将动态库文件复制到文件夹 smbin下，eg:smbin/smu.so
-
+下载lib库，动态库文件目录设置到环境目录
+Windows平台设置到PATH
 Linux平台环境变量 LD_LIBRARY_PATH 添加 smbin 目录，
 	eg：export LD_LIBRARY_PATH=/home/map/GIScript/pylib/smbin:$LD_LIBRARY_PATH
 
