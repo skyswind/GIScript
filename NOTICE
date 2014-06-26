@@ -1,0 +1,13 @@
+Requests includes some vendorized python libraries to ease installation.
+
+GeoTools License
+===============
+
+TThe GeoTools project is a member of the Open Source Geospatial Foundation; the foundation holds copyright for the project.
+
+As an open source project GeoTools is made available to you using an open source (LGPL) license as described below.
+
+A few select files have additional license:
+
+ * Code contributed by government members is often contributed as public domain
+ * To facilitate adopting of the GeoTools library the example code used in the user guide is also public domain
