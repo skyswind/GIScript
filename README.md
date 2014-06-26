@@ -27,7 +27,7 @@ GIScript is for everyone use with a childish syntax built on Python, however we 
 To install GIScript, simply:
 
 ```python
-$ pip install requests
+$ pip install GIScript
 ```
 
 
