@@ -1,13 +1,24 @@
 **GIScript**
 =========
-# What is GIScript:
-*Script Language For GeoSpatial Use*
-
 
 ----------
 
 # Overview:
 
+GIScript is an COPU Licensed Script Language and Engine, written in Python,  For GeoSpatial Use.  
+
+For a long time, GIS is described as a tool for professionals, for map making, but we say no.  
+
+GIScript is for everyone use with a childish syntax built on Python, however we use a cross-platform C++ lib to ensure the engine's enterpise performance.  
+
+
+----------
+
+# Features:
+
+> * Command based interaction
+> * Geospatial Data Management, Input, Output
+> * Map Control Demo
 
 ----------
 
