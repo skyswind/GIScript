@@ -13,16 +13,16 @@
 
 # Installation:
 
+To install GIScript, simply:
+
+```python
+$ pip install requests
+```
+
 
 ----------
-# MileStone:
-2014.03.30 init the project  
-2014.06.04 upload version 1  
-
-
-----------
-# Todo:
-1、Prepare for the publication
+# Documentation:
+Documentation is available at [Wiki][4] 
 
 
 ----------
@@ -35,3 +35,4 @@
   [1]: https://github.com/skyswind/GIScript/issues?direction=desc&labels=Contributor%20Friendly&page=1&sort=updated&state=open
   [2]: https://github.com/skyswind/GIScript
   [3]: https://github.com/skyswind/GIScript/blob/master/AUTHORS.rst
+  [4]: https://github.com/skyswind/GIScript/wiki
