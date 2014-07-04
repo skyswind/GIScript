@@ -57,8 +57,17 @@ mqttc.on_subscribe = on_subscribe
 
 mqttc.on_log = on_log
 
+#Using Mosquitto MQTT Borker.
+#Local Server.
 #strBroker = "localhost"
+
+#Lan Server.
 strBroker = "192.168.105.8"
+
+#public server by SMI.
+#strBroker = "112.124.67.178"
+
+#test server by eclipse funds.
 #strBroker = "m2m.eclipse.org"
 
 mqttc.connect(strBroker, 1883, 60)

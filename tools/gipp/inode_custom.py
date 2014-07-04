@@ -22,8 +22,18 @@ except ImportError:
 strChannel = "/inode/info"
 
 print "Pulish to channel:", strChannel     
+
+#Using Mosquitto MQTT Borker.
+#Local Server.
 #strBroker = "localhost"
+
+#Lan Server.
 strBroker = "192.168.105.8"
+
+#public server by SMI.
+#strBroker = "112.124.67.178"
+
+#test server by eclipse funds.
 #strBroker = "m2m.eclipse.org"
 
 #for i in range(0,100):
