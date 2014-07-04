@@ -62,10 +62,10 @@ mqttc.on_log = on_log
 #strBroker = "localhost"
 
 #Lan Server.
-strBroker = "192.168.105.8"
+#strBroker = "192.168.105.8"
 
 #public server by SMI.
-#strBroker = "112.124.67.178"
+strBroker = "112.124.67.178"
 
 #test server by eclipse funds.
 #strBroker = "m2m.eclipse.org"
