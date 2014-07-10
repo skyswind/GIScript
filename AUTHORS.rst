@@ -11,6 +11,7 @@ Core Contributors
 - zhouqin <zhouqin@supermap.com> `@Zhouqin <https://github.com/zhouqin>`_
 - supergis <wangerqi@supermap.com> `@supergis <https://github.com/supergis>`_
 - shiwwgis <shiweiwei@supermap.com> `@shiwwgis <https://github.com/shiwwgis>`_
+- yangweiming <yangweiming@supermap.com> `@yangweiming <https://github.com/yangweiming>`_
 - huangzhou <huangzhou@pku.edu.cn> `@huangzhou <https://github.com/huangzhou>`_
 
 Patches and Suggestions
