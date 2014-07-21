@@ -3,7 +3,8 @@
 
 import os
 import sys
-import bin.smu as smu
+#import bin.smu as smu
+import smu
 
 #Rect2D
 class rect:

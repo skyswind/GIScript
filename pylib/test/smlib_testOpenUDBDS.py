@@ -16,11 +16,11 @@ udbpath=unicode(sys.path[0]+'/smlib_worldpy.udb',"utf-8")
 
 # 初始化 pylib 环境
 def initEnvironment():
-        """ Initialize GIScript Environment,Load Library.
-        """
-        smlib_path=os.path.dirname(sys.path[0]+"/../smlib_python/")
-#        print "smlib path: ", smlib_path
-        sys.path.append(smlib_path)
+	""" Initialize GIScript Environment,Load Library.
+	"""
+	smlib_path=os.path.dirname(sys.path[0]+"/../smlib_python/")
+	print "Load Library,smlib path: ", smlib_path
+	sys.path.append(smlib_path)
 
 def testOpenUDB():
 #       print udbpath
@@ -48,6 +48,7 @@ help =u"----------------------------------------------------------\n\
 ----------------------------------------------------------\n"
 
 if __name__=='__main__':
+	print "Test Open Datasource."
 	reload(sys)
 	sys.setdefaultencoding("utf-8")
 	if len(sys.argv) == 1:

@@ -1,11 +1,12 @@
-﻿#coding: utf-8
+#coding: utf-8
 # 各引擎实现类
 
 import os
 import sys
 import math
 import smData
-import bin.smu as smu
+#import bin.smu as smu
+import smu
 
 #UDB类型的数据源
 #必填参数：【udb文件路径】
