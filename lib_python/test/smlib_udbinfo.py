@@ -68,7 +68,7 @@ if __name__=='__main__':
         #smlib.load_smlib()
         #import libSuBase
         #import libSuDataExchange
-        #import smEngine
+        import smEngine
         import smu
-        #testOpenUDB()
+        testOpenUDB()
         sys.exit()

@@ -15,15 +15,14 @@ import os
 udbpath=unicode(sys.path[0]+'/smlib_worldpy.udb',"utf-8")
 
 # 初始化 pylib 环境
-def initEnvironment():
+def initSMLib():
 	""" Initialize GIScript Environment,Load Library.
 	"""
-	smlib_path=os.path.dirname(sys.path[0]+"/../smlib_python/")
+	smlib_path=os.path.dirname(sys.path[0]+"/../smlib/")
 	print "Load Library,smlib path: ", smlib_path
 	sys.path.append(smlib_path)
 
-def testOpenUDB():
-#       print udbpath
+def listDataset():
 	if os.path.exists(udbpath):
 		uds = smEngine.uds(udbpath, u'smlib_worldpy')
 		bOpen = uds.Open()
@@ -38,25 +37,15 @@ def testOpenUDB():
 			
 		uds.Close()
 	else:
-		print u"打开数据源失败"
-		print u"UDB文件不存在：" + udbpath
-
-	
-help =u"----------------------------------------------------------\n\
-说明:打开udb数据源，列出数据集名\n\
-用法: CreateUDBDS.py      \n\
-----------------------------------------------------------\n"
+		print u"打开数据源失败,可能UDB文件不存在：" + udbpath
 
 if __name__=='__main__':
-	print "Test Open Datasource."
+	print "List Dataset of   Datasource."
 	reload(sys)
 	sys.setdefaultencoding("utf-8")
-	if len(sys.argv) == 1:
-		initEnvironment()
-		import smlib
-		smlib.load_smlib()
-		import smEngine
-		testOpenUDB()
-	else:   
-		print help
-		sys.exit()
+	initSMLib()
+	import smlib
+	smlib.load_smlib()
+	import smEngine
+
+	listDataset()

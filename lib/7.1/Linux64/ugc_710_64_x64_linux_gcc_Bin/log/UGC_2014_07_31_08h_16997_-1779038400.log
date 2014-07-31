@@ -1,0 +1,105 @@
+2014-07-31 08:49:38 [     0] (  error) 
+ID:  -100 chart setting file does not found ! 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGChartEnvironment.cpp 
+CodeLine:29
+2014-07-31 08:49:38 [    14] (  error) 
+ID:  -100 chart setting file does not found ! 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGChartEnvironment.cpp 
+CodeLine:29
+2014-07-31 08:49:38 [     1] (  error) 
+ID:  -100 chart setting file does not found ! 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGChartEnvironment.cpp 
+CodeLine:29
+2014-07-31 08:49:38 [     0] (  error) 
+ID:  -100 chart setting file does not found ! 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGChartEnvironment.cpp 
+CodeLine:29
+2014-07-31 08:49:38 [     1] (  error) 
+ID:  -100 chart setting file does not found ! 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGChartEnvironment.cpp 
+CodeLine:29
+2014-07-31 08:49:38 [     1] (  error) 
+ID:  -100 chart setting file does not found ! 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGChartEnvironment.cpp 
+CodeLine:29
+2014-07-31 08:49:38 [     0] (  error) 
+ID:  -100 Can not open file   Error message Can not open file  
+ThreadID:2515928896 
+CodeFile:../../../Src/Toolkit/UGMarkup.cpp 
+CodeLine:127
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:26
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:758
+2014-07-31 08:49:38 [     0] (  error) 
+ID:  -100 Can not open file   Error message Can not open file  
+ThreadID:2515928896 
+CodeFile:../../../Src/Toolkit/UGMarkup.cpp 
+CodeLine:127
+2014-07-31 08:49:38 [     1] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:84
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:773
+2014-07-31 08:49:38 [     0] (  error) 
+ID:  -100 Can not open file   Error message Can not open file  
+ThreadID:2515928896 
+CodeFile:../../../Src/Toolkit/UGMarkup.cpp 
+CodeLine:127
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:171
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:790
+2014-07-31 08:49:38 [     0] (  error) 
+ID:  -100 Can not open file   Error message Can not open file  
+ThreadID:2515928896 
+CodeFile:../../../Src/Toolkit/UGMarkup.cpp 
+CodeLine:127
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg002 XML文件加载失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:320
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:804
+2014-07-31 08:49:38 [     0] (  error) 
+ID:  -100 Can not open file   Error message Can not open file  
+ThreadID:2515928896 
+CodeFile:../../../Src/Toolkit/UGMarkup.cpp 
+CodeLine:127
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg002 XML文件加载失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:414
+2014-07-31 08:49:38 [     0] (  error) 
+ID:EAg001 解析XML文件失败 
+ThreadID:2515928896 
+CodeFile:../../../Src/ChartBase/UGS57Dictionary.cpp 
+CodeLine:818
