@@ -76,7 +76,8 @@ class RasterFileToUDB():
         if childFile:
             curFileList = (dirname,childFile)
             self.fileList.append(curFileList)
-            
+     
+    #导入影像文件到多个数据集，每一数据集对应一文件。       
     def RasterToUDB(self):
         datasourceAlias = ""
         datasources = {}
@@ -90,23 +91,17 @@ class RasterFileToUDB():
                 else:
                     datasourceAlias = self.datasourceName
                 #创建数据源
-		#datasourceAlias = self.datasourceName	    
+		datasourceAlias = self.datasourceName	    
 	    	uPath = self.udbPath +  datasourceAlias + u'.udb'
 	    	print u"UDB: "+ uPath
 		
 		DatasourceUDB = smEngine.uds(uPath, datasourceAlias)
-                if not DatasourceUDB.has_key(datasourceAlias):
-                	if DatasourceUDB.Create() == True:
-				print u"Create UDB: [",uPath,u"] success."	
-	    		else:
-				print u"Create UDB Failed."
-                    	datasources[datasourceAlias] = datasourceAlias
-                else:
-                    DatasourceUDB.Close()
-                    if DatasourceUDB.Open() == False:
-                        logging.error(u"打开数据源：[" + datasourceAlias + u"]失败。")                        
-                        return
-    
+                if DatasourceUDB.Create() == True:
+			print u"Create UDB: [",uPath,u"] success."	
+	    	else:
+			print u"Create UDB Failed."
+                datasources[datasourceAlias] = datasourceAlias
+             
                 for rasterFile in files:
                     datasetName = pth.split(rasterFile)[1]
                     datasetName = pth.splitext(datasetName)[0]  # 获取不带扩展名的文件名
@@ -115,7 +110,8 @@ class RasterFileToUDB():
                     datasetName = datasetName.replace('-', '_')
 
                     logging.info(u"开始导入数据：[" + rasterFile + "]...")
-                    if DatasourceUDB.ImportImage(datasetName,self.encodeType,self.fileType,rasterFile):
+                    if DatasourceUDB.ImportImage(unicode(datasetName,"ascii"),self.encodeType,
+					self.fileType,unicode(rasterFile,"ascii")):
                         logging.info(u"导入数据：[" + rasterFile + u"]到数据源：[" + datasourceAlias + u"]成功。")
                         self.importDataCount += 1
                     else:
@@ -123,9 +119,9 @@ class RasterFileToUDB():
 
                 #创建影像金字塔
                 if self.isBuildPyramid:
-                    datasetCount = DatasourceUDB.GetDatasetCount(datasourceAlias)
+                    datasetCount = DatasourceUDB.GetDatasetCount()
                     for datasetIndex in range(datasetCount):
-                        datasetName = DatasourceUDB.GetDatasetName(datasourceAlias,datasetIndex)
+                        datasetName = DatasourceUDB.GetDatasetName(datasetIndex)
                         logging.info(u'数据集' + datasetName + u'开始创建影像金字塔...')
                         if DatasourceUDB.BuildPyramid(datasourceAlias,datasetName):
                             logging.info(u"数据源：[" + datasourceAlias + u"] 数据集：[" + datasetName + u"]创建影像金字塔成功。")
@@ -136,7 +132,8 @@ class RasterFileToUDB():
         logging.info(u"导入操作完成。")
         logging.info(u"共有 " + str(self.importDataCount) + u" 个数据被成功导入为UDB格式。")
         #smu.Exit()
-        
+    
+    #导入目录中的文件到单个数据集，自动按照坐标拼接，需要同一坐标系。    
     def RasterToUDBAndMerge(self):
         engineType = 'sceUDB'
         L = []
@@ -149,9 +146,9 @@ class RasterFileToUDB():
         if len(self.fileList) > 0:
             for parent,files in self.fileList:
                 for rasterFile in files:
-		    #print "Import:" + rasterFile,self.fileType
+		    		#print "Import:" + rasterFile,self.fileType
                     L = smBase.GetImageGeoRef(self.fileType,unicode(rasterFile, "ascii"))
-		    #print L
+		    		#print L
                     l = float(L[0][0])
                     t = float(L[0][1])
                     r = float(L[0][2])
@@ -288,9 +285,13 @@ if __name__ == '__main__':
 	strcurtime = curtime.strftime("%Y-%m-%d %H:%M:%S") 
 	print strcurtime+"-Begin."
 	
-	objImport = RasterFileToUDB(r'/media/supermap/GeoImage/test',
-				r'/media/supermap/GeoImage/test/',u'fileTIF',u'SRTM',u'Image',
-                                    u'0',u'encDCT',u'1',u'1',u'IPF_RGB')
+	objImport = RasterFileToUDB(r'/media/supermap/GeoImage/ETM/TIF',
+				r'/media/supermap/GeoData/MapData/SM_Format/SM_ETM2',
+				u'fileTIF',u'ETM2_SM71',u'Image',u'0',u'encDCT',u'1',u'1',u'IPF_RGB')
+	#objImport = RasterFileToUDB(r'/media/supermap/GeoImage/test',
+	#			r'/media/supermap/GeoImage/test/',u'fileTIF',u'SRTM',u'Image',
+    #                                u'0',u'encDCT',u'1',u'0',u'IPF_RGB')
+	
 	objImport.ToUDB()
 
 	#L = smu.GetImageGeoRef(u'fileTIF',u'/media/supermap/GeoImage/test/N-02-15.tif')

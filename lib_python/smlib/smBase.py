@@ -5,6 +5,7 @@ import os
 import sys
 #import bin.smu as smu
 import smu
+smu.Init()
 
 #Rect2D
 class rect:
@@ -52,6 +53,14 @@ class imgFileInfo:
         print u'\n'
 
 #下面是一些通用的函数
+
+#返回栅格或影像文件的地理边界
+def GetImageGeoRef(imgType,fileName):
+	#print "ImgFile: "+fileName,imgType
+    	imgBounds = []
+	imgBounds = smu.GetImageGeoRef(imgType,fileName)
+	#print imgBounds 
+    	return imgBounds
 
 #根据栅格文件完整路径来获取文件的信息
 def GetImgFileInfo(fileName,imgType):

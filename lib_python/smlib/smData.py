@@ -221,7 +221,7 @@ class ds:
     #iWidth, 栅格数据集宽度，单位：像素
     #iHeight, 栅格数据集高度，单位：像素
     #nBandCount, 波段数，默认为1
-    #例：ds.CreateRaster('RasterDt', 'Image', 'encDCT', 'IPF_RGB', 256, 71.1, 52.7, 133.5, 14.7, 70000, 80000)
+    #例：ds.CreateRaster2('RasterDt', 'Image', 'encDCT', 'IPF_RGB', 256, 71.1, 52.7, 133.5, 14.7, 70000, 80000)
     def CreateRaster2(self, dtName, dtType, encType, pixFormat, iBlkSize, dLeft, dTop, dRight, dBottom, iWidth, iHeight, nBandCount = 1):
         if smu.CreateDatasetRaster(self.alias, dtName, dtType, encType,pixFormat, iWidth, iHeight, dLeft, dTop, dRight, dBottom, iBlkSize, nBandCount):
             return True
