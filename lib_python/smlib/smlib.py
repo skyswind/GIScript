@@ -24,7 +24,7 @@ def load_smlib():
     smupath=smlibpath+"smu.so"
     if os.path.exists(smupath):
         sys.path.append(smlibpath)
-        print "smlib set smu path: ",smlibpath
+        print "smu.so: ",smlibpath
     else:
         print "file not exist: ",smupath
 
